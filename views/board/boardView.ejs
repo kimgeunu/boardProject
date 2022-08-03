@@ -1,27 +1,36 @@
 <%- include ('../include/header') -%>
-    <div class="input-group mb-3">
-        <span class="input-group-text" id="basic-addon1">제목</span>
-        <input type="text" id='title' class="form-control" aria-label="Username" aria-describedby="basic-addon1"
-            readonly>
-    </div>
-    <div class="input-group mb-3">
-        <span class="input-group-text" id="basic-addon1">작성자명</span>
-        <input type="text" id='name' class="form-control" aria-label="Username" aria-describedby="basic-addon1"
-            readonly>
-    </div>
-    <div class="input-group mb-3">
-        <span class="input-group-text" id="basic-addon1">작성날짜</span>
-        <input type="text" id='day' class="form-control" aria-label="Username" aria-describedby="basic-addon1" readonly>
-    </div>
-    <div class="input-group mb-3">
-        <span class="input-group-text" id="basic-addon1">내용</span>
-        <input type="text" id='contents' class="form-control" aria-label="Username" aria-describedby="basic-addon1"
-            readonly>
-    </div>
+    <div class="container-fluid">
+        <h3>게시판 뷰</h3>
+        <div class="row">
 
-    <button type="button" id="updateButton" class="btn btn-primary">수정하기</button>
-    <button type="button" id="deleteButton" class="btn btn-danger">삭제하기</button>
+            <div class="input-group mb-3 col">
+                <span class="input-group-text" id="basic-addon1">제목</span>
+                <input type="text" id='title' class="form-control" aria-label="Username" aria-describedby="basic-addon1"
+                    readonly>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-group mb-3 col">
+                <span class="input-group-text" id="basic-addon1">작성자명</span>
+                <input type="text" id='name' class="form-control" aria-label="Username" aria-describedby="basic-addon1"
+                    readonly>
+            </div>
+            <div class="input-group mb-3 col">
+                <span class="input-group-text" id="basic-addon1">작성날짜</span>
+                <input type="text" id='day' class="form-control" aria-label="Username" aria-describedby="basic-addon1" readonly>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-group mb-3 col">
+                <span class="input-group-text" id="basic-addon1">내용</span>
+                <input type="text" id='contents' class="form-control" aria-label="Username" aria-describedby="basic-addon1"
+                    readonly>
+            </div>
+        </div>
 
+        <button type="button" id="updateButton" class="btn btn-primary">수정하기</button>
+        <button type="button" id="deleteButton" class="btn btn-danger">삭제하기</button>
+    </div>
     <%- include ('../include/modal') -%>
 
 
