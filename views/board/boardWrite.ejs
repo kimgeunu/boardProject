@@ -1,28 +1,34 @@
 <%- include ('../include/header') -%>
-<div class="input-group mb-3">
-    <span class="input-group-text" id="basic-addon1">제목</span>
-    <input type="text" id='title' class="form-control" placeholder="제목을 입력해주세요." aria-label="Username"
-        aria-describedby="basic-addon1">
-</div>
-<div class="input-group mb-3">
-    <span class="input-group-text" id="basic-addon1">작성자명</span>
-    <input type="text" id='name' class="form-control" placeholder="작성자명을 입력해주세요." aria-label="Username"
-        aria-describedby="basic-addon1">
-</div>
-<div class="input-group mb-3">
-    <span class="input-group-text" id="basic-addon1">비밀번호</span>
-    <input type="text" id='passWord' class="form-control" placeholder="비밀번호를 입력해주세요." aria-label="Username"
-        aria-describedby="basic-addon1">
-</div>
-<div class="input-group mb-3">
-    <span class="input-group-text" id="basic-addon1">내용</span>
-    <input type="text" id='contents' class="form-control" placeholder="내용을 입력해주세요." aria-label="Username"
-        aria-describedby="basic-addon1">
-</div>
-
-
+<div class="container-fluid">
+    <h3>게시판 작성</h3>
+    <div class="row">
+        <div class="col input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">제목</span>
+            <input type="text" id='title' class="form-control" placeholder="제목을 입력해주세요." aria-label="Username"
+                aria-describedby="basic-addon1">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">작성자명</span>
+            <input type="text" id='name' class="form-control" placeholder="작성자명을 입력해주세요." aria-label="Username"
+                aria-describedby="basic-addon1">
+        </div>
+        <div class="col input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">비밀번호</span>
+            <input type="text" id='passWord' class="form-control" placeholder="비밀번호를 입력해주세요." aria-label="Username"
+                aria-describedby="basic-addon1">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">내용</span>
+            <input type="text" id='contents' class="form-control" placeholder="내용을 입력해주세요." aria-label="Username"
+                aria-describedby="basic-addon1">
+        </div>
+    </div>
 <button type="button" class="btn btn-info" onclick="save_blog()">글쓰기</button>
-
+</div>
 <%- include ('../include/modal') -%>
 
     <script>
