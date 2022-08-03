@@ -6,7 +6,6 @@ const app = express();
 const router = express.Router();
 const port = 3000;
 
-//https://tristy.tistory.com/20
 const connect = require('./schema/dbconnect');
 connect();
 
